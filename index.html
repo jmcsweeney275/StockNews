@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+ <style>
+
+    .flex-container {
+        display: flex;
+        align-items: stretch;
+        background-color: black;
+        height: 100px;
+        
+
+    }
+
+    .flex-container > div {
+        background-color: blanchedalmond;
+        color: black;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        
+    }
+    .PortfolioSec{
+display: flex;
+align-items: stretch;
+background-color: black;
+
+    }
+    .PortfolioSec > div {
+      background-color: blanchedalmond;
+      color: black;
+      margin: 1px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 20px;
+
+    }
+    .dropbtn {
+      background-color: blue;
+      color: white;
+      padding: 10px;
+      border: none;
+
+
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 100px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index:1;
+
+    }
+
+    .dropdown-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: blueviolet;}
+
+ </style>
+
+
+<script>
+
+function PrintADBENews() {
+
+
+  document.getElementById("News").innerHTML = "CNN: Investors Unsatisfied"
+  document.getElementById("ticker1").innerHTML = "ABDE"
+
+}
+
+function PrintMATXNews() {
+
+
+document.getElementById("News").innerHTML = "FOX: Shipping Industry Takes Hit"
+document.getElementById("ticker1").innerHTML = "MATX"
+
+}
+
+function PrintAPPLNews() {
+
+
+document.getElementById("News").innerHTML = "Reuters: New Iphone Set to Launch in 2024"
+document.getElementById("ticker1").innerHTML = "APPL"
+
+
+}
+
+//Begin the new code for ticker 2-------------------------//
+
+function PrintADBENews2() {
+
+
+document.getElementById("News2").innerHTML = "CNN: Investors Unsatisfied"
+document.getElementById("ticker2").innerHTML = "ABDE"
+
+}
+
+function PrintMATXNews2() {
+
+
+document.getElementById("News2").innerHTML = "FOX: Shipping Industry Takes Hit"
+document.getElementById("ticker2").innerHTML = "MATX"
+
+}
+
+function PrintAPPLNews2() {
+
+
+document.getElementById("News2").innerHTML = "Reuters: New Iphone Set to Launch in 2024"
+document.getElementById("ticker2").innerHTML = "APPL"
+
+
+}
+
+
+//Begin code for ticker3 --------------------------//
+function PrintADBENews3() {
+
+
+document.getElementById("News3").innerHTML = "CNN: Investors Unsatisfied"
+document.getElementById("ticker3").innerHTML = "ABDE"
+
+}
+
+function PrintMATXNews3() {
+
+
+document.getElementById("News3").innerHTML = "FOX: Shipping Industry Takes Hit"
+document.getElementById("ticker3").innerHTML = "MATX"
+
+}
+
+function PrintAPPLNews3() {
+
+
+document.getElementById("News3").innerHTML = "Reuters: New Iphone Set to Launch in 2024"
+document.getElementById("ticker3").innerHTML = "APPL"
+
+
+}
+
+
+
+
+//News API Request//
+
+
+
+
+//
+
+</script>
+  </head>
+
+
+
+  <body>
+
+
+    <title> Portfolio </title>
+	
+  </body>
+
+
+  <div class="flex-container">
+    <div style="flex-grow: 1;">Portfolio</div>
+    <div style ="flex-grow: 6;">News</div>
+    
+  </div>
+
+  <div class="PortfolioSec">
+    <div style="flex-grow: 1">
+        <div class="dropdown"> 
+          <button id="ticker1"class="dropbtn">Stock</button>
+          <div class="dropdown-content">
+            <button onClick="PrintADBENews()"> ADBE</button>
+            <button onClick="PrintMATXNews()"> MATX </button>
+            <button onClick="PrintAPPLNews()"> APPL </button>
+          </div></div>
+   </div>
+    <div id="News" style="flex-grow: 6"> </div>
+
+  </div>
+
+  <div class="PortfolioSec">
+    <div style="flex-grow: 1">
+        <div class="dropdown"> 
+          <button id="ticker2"class="dropbtn">Stock</button>
+          <div class="dropdown-content">
+            <button onClick="PrintADBENews2()"> ADBE</button>
+            <button onClick="PrintMATXNews2()"> MATX </button>
+            <button onClick="PrintAPPLNews2()"> APPL </button>
+          </div></div>
+   </div>
+    <div id="News2" style="flex-grow: 6"> </div>
+
+  </div>
+
+
+  <div class="PortfolioSec">
+    <div style="flex-grow: 1">
+        <div class="dropdown"> 
+          <button id="ticker3"class="dropbtn">Stock</button>
+          <div class="dropdown-content">
+            <button onClick="PrintADBENews3()"> ADBE</button>
+            <button onClick="PrintMATXNews3()"> MATX </button>
+            <button onClick="PrintAPPLNews3()"> APPL </button>
+          </div></div>
+   </div>
+    <div id="News3" style="flex-grow: 6"> </div>
+
+  </div>
+
+
+
+
+  
+
+</html>
